@@ -22,11 +22,11 @@ body {
 }
 
 .btn {
-  height: 200px;
-  width: 200px;
+  height: 30vh;
+  width: 40vw;
   border: 5px solid black;
   border-radius: 20%;
-  margin: 30px 15px;
+  margin: 2vh 2vw;
 }
 
 .red {
