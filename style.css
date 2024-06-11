@@ -16,6 +16,17 @@ body {
   color: white;
 }
 
+.start{
+  background-color: wheat;
+  padding: 5px 15px 1px 15px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin: 1px 20px 1px 10px;
+}
+
 .ColorBoxes {
   display: flex;
   justify-content: center;
@@ -23,9 +34,9 @@ body {
 
 .btn {
   height: 30vh;
-  width: 40vw;
+  width: 30vw;
   border: 5px solid black;
-  border-radius: 20%;
+  border-radius: 40px;
   margin: 2vh 2vw;
 }
 
