@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: burlywood;
+  text-align: center;
+}
+
+.heading {
+  margin: 20px 20%;
+  border: 2px solid wheat;
+  border-radius: 10px;
+  background-color: saddlebrown;
+  color: white;
+}
+
+.ColorBoxes {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  height: 200px;
+  width: 200px;
+  border: 5px solid black;
+  border-radius: 20%;
+  margin: 30px 15px;
+}
+
+.red {
+  background-color: crimson;
+}
+
+.yellow {
+  background-color: darkgoldenrod;
+}
+
+.purple {
+  background-color: darkmagenta;
+}
+
+.green {
+  background-color: mediumseagreen;
+}
+
+.flash{
+    background-color: blanchedalmond;
+}
