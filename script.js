@@ -17,6 +17,14 @@ document.addEventListener("keypress", function () {
   }
 });
 
+document.addEventListener("mouseenter", function () {
+  if (started == false) {
+    console.log("khela shuru ho gya ");
+    started = true;
+    levelup();
+  }
+});
+
 function flash(btn) {
   btn.classList.add("flash");
   setTimeout(function () {
