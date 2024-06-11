@@ -17,7 +17,8 @@ document.addEventListener("keypress", function () {
   }
 });
 
-document.addEventListener("mouseenter", function () {
+let btn = document.querySelector("button");
+btn.addEventListener("click", function () {
   if (started == false) {
     console.log("khela shuru ho gya ");
     started = true;
