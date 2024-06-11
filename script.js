@@ -1,30 +1,24 @@
 let gameseq = [];
 let userseq = [];
-
 let btnColors = ["red", "yellow", "purple", "green"];
-
 let started = false;
-
 let level = 0;
-
 let h2 = document.querySelector("h2");
+let startbtn = document.querySelector(".start");
 
-document.addEventListener("keypress", function () {
+document.addEventListener("keypress", start);
+startbtn.addEventListener("click",start);
+
+function start(){
   if (started == false) {
     console.log("khela shuru ho gya ");
     started = true;
     levelup();
+    startbtn.style.display = "none";
   }
-});
+}
 
-let btn = document.querySelector("button");
-btn.addEventListener("click", function () {
-  if (started == false) {
-    console.log("khela shuru ho gya ");
-    started = true;
-    levelup();
-  }
-});
+
 
 function flash(btn) {
   btn.classList.add("flash");
@@ -52,7 +46,9 @@ function cheakAns(idx) {
       setTimeout(levelup, 1000);
     }
   } else {
-    h2.innerHTML = `game over!! Your Score was <b>${level}</b><i> press any key to play again.</i>`;
+    h2.innerHTML = `game over!! Your Score was <b>${level}</b>`;
+    startbtn.style.display = "inline";
+    startbtn.innerText = "Restart";
     document.querySelector("body").style.backgroundColor = "red";
     setTimeout(function(){
       document.querySelector("body").style.backgroundColor = "burlywood";
