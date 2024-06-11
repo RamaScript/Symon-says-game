@@ -16,6 +16,10 @@ body {
   color: white;
 }
 
+.level{
+  display: inline;
+}
+
 .start{
   background-color: wheat;
   padding: 5px 15px 1px 15px;
