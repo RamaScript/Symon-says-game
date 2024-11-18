@@ -16,16 +16,34 @@ body {
   color: white;
 }
 
-.level{
+.highest-score {
+  background-color: saddlebrown;
+  display: inline;
+  padding: 0.5rem;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  border-radius: 10px;
+  color: wheat;
+  font-size: 1.25rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.highest-score p{
   display: inline;
 }
 
-.start{
+.level {
+  display: inline;
+}
+
+.start {
   background-color: wheat;
   padding: 5px 15px 1px 15px;
   font-size: 20px;
   font-weight: 500;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   border: 2px solid white;
   border-radius: 20px;
   margin: 1px 20px 1px 10px;
@@ -60,6 +78,6 @@ body {
   background-color: mediumseagreen;
 }
 
-.flash{
-    background-color: blanchedalmond;
+.flash {
+  background-color: blanchedalmond;
 }

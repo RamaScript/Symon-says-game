@@ -6,10 +6,14 @@ let level = 0;
 let h2 = document.querySelector("h2");
 let startbtn = document.querySelector(".start");
 
-document.addEventListener("keypress", start);
-startbtn.addEventListener("click",start);
+let hsp = document.querySelector("#hs");
+let hs = 0;
+hsp.innerHTML = "0";
 
-function start(){
+document.addEventListener("keypress", start);
+startbtn.addEventListener("click", start);
+
+function start() {
   if (started == false) {
     console.log("khela shuru ho gya ");
     started = true;
@@ -17,8 +21,6 @@ function start(){
     startbtn.style.display = "none";
   }
 }
-
-
 
 function flash(btn) {
   btn.classList.add("flash");
@@ -31,6 +33,10 @@ function levelup() {
   userseq = [];
   level++;
   h2.innerText = `level ${level}`;
+  if (hs < level) {
+    hs = level;
+  }
+  hsp.innerHTML = hs;
 
   let randomBox = Math.floor(Math.random() * 3);
   let randomColor = btnColors[randomBox];
@@ -50,15 +56,15 @@ function cheakAns(idx) {
     startbtn.style.display = "inline";
     startbtn.innerText = "Restart";
     document.querySelector("body").style.backgroundColor = "red";
-    setTimeout(function(){
+    setTimeout(function () {
       document.querySelector("body").style.backgroundColor = "burlywood";
-    },100);
-    setTimeout(function(){
+    }, 100);
+    setTimeout(function () {
       document.querySelector("body").style.backgroundColor = "red";
-    },200);
-    setTimeout(function(){
+    }, 200);
+    setTimeout(function () {
       document.querySelector("body").style.backgroundColor = "burlywood";
-    },300);
+    }, 300);
     reset();
   }
 }
